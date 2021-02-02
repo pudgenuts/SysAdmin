@@ -15,7 +15,7 @@ fi
 
 cat /etc/yum/yum-cron.conf.install |\
 sed -e's/^update_cmd.*/update_cmd = default/g' | \
-sed -e's/^download_updates.*/download_updates = no/g'| \
+sed -e's/^download_updates.*/download_updates = yes/g'| \
 sed -e's/^apply_updates.*/apply_updates = yes/g' \
 > /etc/yum/yum-cron.conf
 
